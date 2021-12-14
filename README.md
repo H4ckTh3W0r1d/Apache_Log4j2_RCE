@@ -219,7 +219,7 @@ ${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://${hostName}.${env:
 
 2）在应用classpath下添加log4j2.component.properties配置文件，文件内容为log4j2.formatMsgNoLookups=true；
 
-3）JDK使用11.0.1、8u191、7u201、6u211及以上的高版本；
+3）JDK使用11.0.1、8u191、7u201、6u211及以上的高版本。
 
 ## BurpSuite主动/被动扫描插件
 
