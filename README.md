@@ -58,7 +58,7 @@ docker exec -it log4j_vuln_container /bin/bash
 ```
 /bin/bash /home/apache-tomcat-8.5.45/bin/startup.sh
 ```
-打开http://47.xxx.xxx.xxx:8080/webstudy/hello-fengxuan，出现以下页面，说明搭建成功。
+打开http://47.xxx.xxx.xxx:8080/webstudy/hello-fengxuan， 出现以下页面，说明搭建成功。
 
 ![image-20211214105350259]($imgs/image-20211214105350259.png)
 
