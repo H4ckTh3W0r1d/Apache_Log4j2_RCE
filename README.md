@@ -32,7 +32,7 @@ Apache Log4j  2.15.0-rc2
 
 [独家！Log4j2 RCE漏洞代码浅析](https://mp.weixin.qq.com/s/1oesQz-UkpqKN3BQH9BKtw)
 
-[Apache Log4j 远程代码执行漏洞分析+复现+攻击排查+自查方法+临时防护措施+WAF检测+排查工具+在野利用方式+总结](https://mp.weixin.qq.com/s/W7kajN3GKKlK-C41N4re4g)
+[Apache Log4j 远程代码执行漏洞分析](https://mp.weixin.qq.com/s/W7kajN3GKKlK-C41N4re4g)
 
 ## 漏洞复现
 
