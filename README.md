@@ -54,7 +54,7 @@ docker pull registry.cn-hangzhou.aliyuncs.com/fengxuan/log4j_vuln
 ```
 #### 1.2 运行漏洞环境容器
 ```
-docker run -it -d -p 8080:8080 --name log4j_vuln_container registry.cnhangzhou.aliyuncs.com/fengxuan/log4j_vuln
+docker run -it -d -p 8080:8080 --name log4j_vuln_container registry.cn-hangzhou.aliyuncs.com/fengxuan/log4j_vuln
 ```
 #### 1.3 进入容器中
 ```
